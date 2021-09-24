@@ -1,0 +1,22 @@
+{
+  "name": "formatjs-extract-issue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "extract": "formatjs extract \"src/**/*.{ts,vue}\" --ignore \"**/*.d.ts\" --format simple --out-file src/lang/en-gb.json"
+  },
+  "dependencies": {
+    "vue": "^3.2.6",
+    "vue-intl": "^6.0.11"
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^4.2.33",
+    "@formatjs/ts-transformer": "^3.4.10",
+    "@vue/cli-plugin-typescript": "~5.0.0-beta.4",
+    "@vue/cli-service": "~5.0.0-beta.4",
+    "@vue/compiler-sfc": "^3.2.6",
+    "typescript": "~4.1.5"
+  }
+}
